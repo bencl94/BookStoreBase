@@ -10,13 +10,13 @@ table 50100 "BSB_Book"
     {
         field(1; "No."; Code[20])
         {
-            Caption = 'Nr.';
+            Caption = 'No.';
             NotBlank = true;
             DataClassification = ToBeClassified;
         }
         field(2; Description; Text[100])
         {
-            Caption = 'Beschreibung';
+            Caption = 'Description';
             DataClassification = ToBeClassified;
 
             trigger OnValidate()
@@ -27,12 +27,12 @@ table 50100 "BSB_Book"
         }
         field(3; "Search Description"; Code[100])
         {
-            Caption = 'Suchbegriff';
+            Caption = 'Search Description';
             DataClassification = ToBeClassified;
         }
         field(4; Blocked; Boolean)
         {
-            Caption = 'Gesperrt';
+            Caption = 'Blocked';
             DataClassification = ToBeClassified;
         }
         field(5; Type; Option)
@@ -43,24 +43,24 @@ table 50100 "BSB_Book"
         }
         field(7; Created; Date)
         {
-            Caption = 'Erstellt am';
+            Caption = 'Created';
             Editable = false;
             DataClassification = ToBeClassified;
         }
         field(8; "Last Date Modified"; Date)
         {
-            caption = 'Letzte Änderung am';
+            caption = 'Last Date Modified';
             Editable = False;
             DataClassification = ToBeClassified;
         }
         field(10; Author; Text[50])
         {
-            Caption = 'Autor';
+            Caption = 'Author';
             DataClassification = ToBeClassified;
         }
         field(11; "Author Provision %"; Decimal)
         {
-            Caption = 'Autor Provision %';
+            Caption = 'Author Provision %';
             DataClassification = ToBeClassified;
             DecimalPlaces = 0 : 2;
             MinValue = 0;
@@ -73,19 +73,19 @@ table 50100 "BSB_Book"
         }
         field(16; "No. of Pages"; Integer)
         {
-            caption = 'Seitenzahl';
+            caption = 'No. of Pages';
             DataClassification = ToBeClassified;
             MinValue = 0;
         }
         field(17; "Edition No."; Integer)
         {
-            Caption = 'Ausgabenr.';
+            Caption = 'EDition No.';
             DataClassification = ToBeClassified;
             MinValue = 0;
         }
         field(18; "Date of Publishing"; Date)
         {
-            Caption = 'Datum Veröffentlichung';
+            Caption = 'Date of Publishing';
             DataClassification = ToBeClassified;
         }
     }
