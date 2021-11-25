@@ -98,6 +98,11 @@ table 50100 "BSB_Book"
         }
     }
 
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Description, Author, "No. of Pages") { }
+    }
+
     var
         OnDeleteErr: Label 'A %1 cannot be deleted!', Comment = '"DEU"=Ein %1 kann nicht gelöscht werden.';
 
