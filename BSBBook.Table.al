@@ -3,6 +3,8 @@ table 50100 "BSB_Book"
     Caption = 'Buch';
     DataClassification = ToBeClassified;
     DataCaptionFields = "No.", Description;
+    LookupPageId = "BSB_Book List";
+    DrillDownPageId = "BSB_Book List";
 
     fields
     {

@@ -39,21 +39,26 @@ page 50100 "BSB_Book Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Type field.';
+                    Importance = Promoted;
                 }
                 field(ISBN; Rec.ISBN)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the ISBN field.';
+                    Importance = Promoted;
+
                 }
                 field(Created; Rec.Created)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Erstellt am field.';
+                    Importance = Additional;
                 }
                 field("Last Date Modified"; Rec."Last Date Modified")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Letzte Änderung am field.';
+                    Importance = Additional;
                 }
             }
             group(Invoicing)
