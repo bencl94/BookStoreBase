@@ -30,6 +30,4 @@ tableextension 50100 "BSB_Customer" extends Customer
     }
     var
         BSB_Book: Record BSB_Book;
-
-    // TODO Auswahl gesperrter Bücher soll unterbunden werden
 }
