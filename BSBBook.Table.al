@@ -105,6 +105,7 @@ table 50100 "BSB_Book"
 
     var
         OnDeleteErr: Label 'A %1 cannot be deleted!', Comment = '"DEU"=Ein %1 kann nicht gelöscht werden.';
+        TestBlockedErr: Label '%1 %2 is blocked.', Comment = '"DEU"=%1 %2 ist gesperrt.';
 
     trigger OnInsert()
     begin
@@ -128,6 +129,7 @@ table 50100 "BSB_Book"
 
     procedure TestBlocked()
     begin
-        TestField(Blocked, false);
+        If Blocked = true then
+            Error(TestBlockedErr, TableCaption, "No.");
     end;
 }

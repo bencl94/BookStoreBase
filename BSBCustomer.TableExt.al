@@ -7,6 +7,17 @@ tableextension 50100 "BSB_Customer" extends Customer
             Caption = 'Favorite Book No.';
             DataClassification = ToBeClassified;
             TableRelation = BSB_Book;
+
+            trigger OnValidate()
+            begin
+                if ("BSB_Favorite Book No." <> '') and
+                    ("BSB_Favorite Book No." <> xrec."BSB_Favorite Book No.") then begin
+                    BSB_Book.Get("BSB_Favorite Book No.");
+                    BSB_Book.TestBlocked();
+                end;
+
+                CalcFields("BSB_Favorite Book Description");
+            end;
         }
         field(50101; "BSB_Favorite Book Description"; Text[100])
         {
@@ -17,6 +28,8 @@ tableextension 50100 "BSB_Customer" extends Customer
         }
 
     }
+    var
+        BSB_Book: Record BSB_Book;
 
     // TODO Auswahl gesperrter Bücher soll unterbunden werden
 }
