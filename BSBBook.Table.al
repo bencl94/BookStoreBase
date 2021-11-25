@@ -2,6 +2,7 @@ table 50100 "BSB_Book"
 {
     Caption = 'Buch';
     DataClassification = ToBeClassified;
+    DataCaptionFields = "No.", Description;
 
     fields
     {
