@@ -35,10 +35,8 @@ table 50100 "BSB_Book"
             Caption = 'Blocked';
             DataClassification = ToBeClassified;
         }
-        field(5; Type; Option)
+        field(5; Type; Enum "BSB_Book Type")
         {
-            OptionMembers = " ",Hardcover,Paperback;
-            OptionCaption = ' ,Hardcover,Paperback';
             DataClassification = ToBeClassified;
         }
         field(7; Created; Date)
