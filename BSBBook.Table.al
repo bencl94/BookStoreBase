@@ -129,7 +129,7 @@ table 50100 "BSB_Book"
         TestField(Blocked, false);
     end;
 
-    internal procedure ShowCard()
+    procedure ShowCard()
     begin
         Page.Run(Page::"BSB_Book Card", Rec);
     end;
