@@ -28,6 +28,11 @@ tableextension 50100 "BSB_Customer" extends Customer
         }
 
     }
+
+    keys
+    {
+        key(BSB_FavoriteBookNo; "BSB_Favorite Book No.") { }
+    }
     var
         BSB_Book: Record BSB_Book;
 }
