@@ -79,7 +79,7 @@ table 50100 "BSB_Book"
         }
         field(17; "Edition No."; Integer)
         {
-            Caption = 'EDition No.';
+            Caption = 'Edition No.';
             DataClassification = ToBeClassified;
             MinValue = 0;
         }
