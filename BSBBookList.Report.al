@@ -11,7 +11,7 @@ report 50100 "BSB_Book List"
         {
             DataItemTableView = sorting(Number) where(Number = const(1));
             column(COMPANYNAME; CompanyProperty.DisplayName()) { }
-            column(ShowNoOfPages; ShowNoOfPages) { }
+            column(ShowNoOfPages; ShowNoOfPages_G) { }
         }
         dataitem(BSB_Book; BSB_Book)
         {
@@ -33,7 +33,7 @@ report 50100 "BSB_Book List"
                 group(Options)
                 {
                     Caption = 'Options';
-                    field(ShowNoOfPages; ShowNoOfPages)
+                    field(ShowNoOfPages; ShowNoOfPages_G)
                     {
                         ApplicationArea = All;
                         Caption = 'Show No. of Pages';
@@ -51,6 +51,6 @@ report 50100 "BSB_Book List"
     }
 
     var
-        ShowNoOfPages: Boolean;
+        ShowNoOfPages_G: Boolean;
 
 }
