@@ -1,4 +1,4 @@
-codeunit 50149 "BSB_BSB Create Books"
+codeunit 50149 "BSB_Create Books"
 {
     trigger OnRun()
     var

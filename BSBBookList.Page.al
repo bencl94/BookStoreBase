@@ -56,5 +56,20 @@ page 50101 "BSB_Book List"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(CreateBooks)
+            {
+                ApplicationArea = All;
+                Caption = 'Create Books', comment = 'DEU="Bücher erstellen"';
+                Image = CreateDocuments;
+                RunObject = codeunit "BSB_Create Books";
+                ToolTip = 'Executes the Create Books action.';
+            }
+        }
+    }
+
 
 }
