@@ -93,6 +93,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit BSB_Company Info. Wizard Meth - Method OnReRunOfCompletedSetup - NamedType SetupAlreadyDoneQst</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1802933205 - Method 4263668849 - NamedType 267657989" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://data.fixer.io/api/latest?access_key=f9b23a52bde207ec2e65de875534b094&amp;base=%1&amp;symbols=%2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BSB_Get Exchange Rate - Method GetExchangeRate - NamedType UrlTxt</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1155004679 - NamedType 2656007186" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 %2 of %3 %4 %5 exceeds %6</source>
           <note from="Developer" annotates="general" priority="2">"DEU"=%1 %2 of %3 %4 %5 exceeds %6</note>
@@ -422,6 +427,16 @@
           <source>Show No. of Pages</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report BSB_Book List - Control ShowNoOfPages - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3247373903 - Action 1802933205 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4081634891">
+          <source>Executes the Get Exchange Rate action</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension BSB_Currencies - Action BSB_Get Exchange Rate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3247373903 - Action 1802933205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4081634891">
+          <source>Get Exchange Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension BSB_Currencies - Action BSB_Get Exchange Rate - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2436207928 - Control 286500390 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Bookstore</source>
