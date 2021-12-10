@@ -8,7 +8,9 @@ codeunit 50149 "BSB_Create Books"
     end;
 
     var
+#pragma warning disable AA0072
         Book: Record BSB_Book;
+#pragma warning restore AA0072
 
     local procedure CreateBook(Int: Integer)
     var
@@ -19,9 +21,11 @@ codeunit 50149 "BSB_Create Books"
         if not Book.Get('B' + Suffix) then Book."No." := 'B' + Suffix;
         Book.Validate(Description, 'Buch ' + Suffix);
         Book.Author := 'Autor ' + Suffix;
-        Book.ISBN := Suffix;
+        Book.ISBN := CopyStr(Suffix, 1, MaxStrLen(Book.ISBN));
         Book."No. of Pages" := Int * 10;
+#pragma warning disable AL0603
         Book.Type := int mod 3;
+#pragma warning restore AL0603
         Book."Date of Publishing" := Today() + Int;
         if not Book.insert(true) then Book.Modify(true);
     end;
