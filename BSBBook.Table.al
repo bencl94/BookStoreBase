@@ -140,7 +140,9 @@ table 50100 "BSB_Book"
     end;
 
     [IntegrationEvent(false, false)]
+#pragma warning disable AA0072
     local procedure OnBeforeDeleteBook(Rec: Record BSB_Book; var isHandled: Boolean)
+#pragma warning restore AA0072
     begin
     end;
 }

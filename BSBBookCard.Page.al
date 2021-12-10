@@ -1,4 +1,6 @@
+#pragma warning disable AW0006
 page 50100 "BSB_Book Card"
+#pragma warning restore AW0006
 {
     PageType = Card;
     SourceTable = BSB_Book;
@@ -38,27 +40,27 @@ page 50100 "BSB_Book Card"
                 field(Type; Rec.Type)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Type field.';
                     Importance = Promoted;
+                    ToolTip = 'Specifies the value of the Type field.';
                 }
                 field(ISBN; Rec.ISBN)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the ISBN field.';
                     Importance = Promoted;
+                    ToolTip = 'Specifies the value of the ISBN field.';
 
                 }
                 field(Created; Rec.Created)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Erstellt am field.';
                     Importance = Additional;
+                    ToolTip = 'Specifies the value of the Erstellt am field.';
                 }
                 field("Last Date Modified"; Rec."Last Date Modified")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Letzte Änderung am field.';
                     Importance = Additional;
+                    ToolTip = 'Specifies the value of the Letzte Änderung am field.';
                 }
             }
             group(Invoicing)

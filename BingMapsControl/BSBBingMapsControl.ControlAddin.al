@@ -1,4 +1,4 @@
-controladdin "BSB BingMapsControl"
+controladdin "BSB_BingMapsControl"
 {
     //Get your Bing Maps key here: https://www.microsoft.com/en-us/maps/create-a-bing-maps-key
     Scripts =

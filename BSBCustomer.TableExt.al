@@ -34,5 +34,7 @@ tableextension 50100 "BSB_Customer" extends Customer
         key(BSB_FavoriteBookNo; "BSB_Favorite Book No.") { }
     }
     var
+#pragma warning disable AA0072
         BSB_Book: Record BSB_Book;
+#pragma warning restore AA0072
 }

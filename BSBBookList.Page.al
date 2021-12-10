@@ -74,6 +74,7 @@ page 50101 "BSB_Book List"
                 Caption = 'Evaluation';
                 ApplicationArea = All;
                 Image = Evaluate;
+                ToolTip = 'Executes the Evaluate action';
 
                 trigger OnAction()
                 var

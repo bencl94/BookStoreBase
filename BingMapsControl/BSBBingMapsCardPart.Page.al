@@ -1,4 +1,4 @@
-page 50120 "BSB BingMapsCardPart"
+page 50120 "BSB_BingMapsCardPart"
 {
     Caption = 'Map';
     PageType = CardPart;
@@ -8,7 +8,7 @@ page 50120 "BSB BingMapsCardPart"
     {
         area(Content)
         {
-            usercontrol(BingMaps; "BSB BingMapsControl")
+            usercontrol(BingMaps; "BSB_BingMapsControl")
             {
                 ApplicationArea = All;
                 trigger ControlAddInReady()
