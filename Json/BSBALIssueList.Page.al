@@ -52,7 +52,9 @@ page 50145 "BSB_AL Issue List"
     {
         area(processing)
         {
+#pragma warning disable AW0011
             action(RefreshALIssueList)
+#pragma warning restore AW0011
             {
                 Caption = 'Refresh Issues';
                 Promoted = true;

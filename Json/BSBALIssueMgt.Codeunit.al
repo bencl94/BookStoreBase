@@ -46,7 +46,9 @@ codeunit 50145 "BSB_AL Issue Mgt."
         while not StopReading do begin
             // Simple web service call
             HttpClient.DefaultRequestHeaders().Add('User-Agent', 'Dynamics 365');
+#pragma warning disable AA0217
             if not HttpClient.Get(Url + StrSubstNo('?page=%1', i), HttpResponseMessage) then
+#pragma warning restore AA0217
                 Error('The call to the web service failed');
 
             if not HttpResponseMessage.IsSuccessStatusCode() then

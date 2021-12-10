@@ -27,7 +27,9 @@ table 50145 "BSB_AL Issue"
 
     procedure RefreshIssues()
     var
+#pragma warning disable AA0072
         RefreshALIssues: Codeunit "BSB_AL Issue Mgt.";
+#pragma warning restore AA0072
     begin
         RefreshALIssues.Refresh();
     end;
