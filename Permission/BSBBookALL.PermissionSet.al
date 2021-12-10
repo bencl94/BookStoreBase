@@ -6,5 +6,6 @@ permissionset 50100 "BSB_Book, ALL"
     Permissions =
         tabledata BSB_Book = rimd,
         table BSB_BOOK = x,
-        tabledata "BSB_AL Issue" = RIMD;
+        tabledata "BSB_AL Issue" = RIMD,
+        tabledata "BSB_Internal Log" = RIMD;
 }
